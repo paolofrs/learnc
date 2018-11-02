@@ -66,18 +66,20 @@ int remove_by_ref(node_t ** head, int ref) {
     node_t * prev = NULL;
     
     // check if the first items has the ref
-    while ((*head)->val != ref) {
+    while ((*head)->val == ref) {
         //if (current->val == ref) {
         *head = current->next;                    // current value assign to head
         retval = current->val;                    // return the value 
         check = true;                             // set flag
         free(current);                            // delete the first item
         current = *head;                          // update current pointer
+        //printf("\nfatto0\n");
     }  
     // scroll the list
     while (last != true) {
         prev = current;
         current = current->next;
+        //printf("\nfatto1\n");
         if (current->val == ref) {
             prev->next = current->next;           // link previous and next items
             retval = current-> val;               // return the value
@@ -90,7 +92,7 @@ int remove_by_ref(node_t ** head, int ref) {
     }       
     return retval;
     if (check==false) {
-        return -1;                                // return error code -1 (no value found)
+        return -2;                                // return error code -1 (no value found)
     }
 }
 
@@ -142,9 +144,11 @@ int main() {
          line = line->next;
          lin_ctr += 1;        
     }
+    printf("\n\n");
     
     // remove a specific item
     delval = remove_by_ref(&head, 2);
+    printf("    deleted val: %d\n", delval);
     
     // show the results after remove
     line = head;
