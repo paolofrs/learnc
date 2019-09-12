@@ -1,9 +1,11 @@
 // this is a test code for dynamic allocation memory
 //
-// Author: Paolo Fresch
+// Author:         Paolo Fresch
+//
+// Reference:      https://www.learn-c.org/en
 // 
-// Info:   version 0.0 : 01-nov-2018 (17:41)
-//                       file creation
+// Revision hist:  0.0    01-nov-2018 (17:41)
+//                        file creation
 //
 
 // library 
