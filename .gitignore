@@ -1,7 +1,7 @@
 # Ignore file
 
 # ignore all but the sources (.c and .h)
-*
+/*
 !*.c
 !*.h
 !*.s
