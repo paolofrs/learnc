@@ -1,7 +1,8 @@
 # Ignore file
 
-# ignore all but the sources (.c and .h)
+# ignore all but the source(s) and readme(s)
 /*
+!.md
 !*.c
 !*.h
 !*.s
