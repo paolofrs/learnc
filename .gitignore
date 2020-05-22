@@ -1,8 +1,14 @@
 # Ignore file
 
-# ignore all but the source(s) and readme(s)
-/*
-!.md
-!*.c
-!*.h
-!*.s
+# ignore all but the source(s) and readme(s) in raspbi3 and test
+raspbi3/*
+!raspbi3/.md
+!raspbi3/*.c
+!raspbi3/*.h
+!raspbi3/*.s
+test/*
+test/!.md
+test/!*.c
+test/!*.h
+test/!*.s
+
